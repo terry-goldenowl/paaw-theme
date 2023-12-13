@@ -1,3 +1,88 @@
+@media only screen and (min-width: 769px) {
+
+    .wpcf7 label {
+        display: block;
+        color: black;
+        font-weight: normal;
+        font-family: 'Quicksand';
+        line-height: 1.625;
+        margin-top: 33px;
+        font-size: 16px;
+    }
+
+    .wpcf7 input[type="text"],
+    .wpcf7 input[type="email"] {
+        outline: none;
+        display: block;
+        border-bottom: black 1px solid;
+        width: 100%;
+    }
+
+
+    .wpcf7 input[type="submit"] {
+        background-color: rgb(16 185 129);
+        color: white;
+        font-size: 1.5rem;
+        line-height: 36px;
+        font-weight: bold;
+        font-family: 'Quicksand';
+        width: 100%;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        margin-top: 35px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .feature-container:hover .overlay {
+        opacity: 0%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .wpcf7 label {
+        display: block;
+        color: black;
+        font-weight: normal;
+        font-family: 'Quicksand';
+        line-height: 16.5px;
+        margin-top: 33px;
+        font-size: 10px;
+    }
+
+    .wpcf7 input[type="text"],
+    .wpcf7 input[type="email"] {
+        outline: none;
+        display: block;
+        border-bottom: black 1px solid;
+        width: 100%;
+    }
+
+
+    .wpcf7 input[type="submit"] {
+        background-color: rgb(16 185 129);
+        color: white;
+        font-size: 11px;
+        line-height: 16.8px;
+        font-weight: bold;
+        font-family: 'Quicksand';
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 25px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .wpcf7-response-output {
+        font-size: 11px;
+    }
+
+}
+
 .wpcf7 {
     display: flex;
     flex-direction: column;
@@ -5,39 +90,18 @@
     justify-content: start;
 }
 
-.wpcf7 label {
-    display: block;
-    color: black;
-    font-weight: normal;
-    font-family: 'Poppins';
-    line-height: 1.625;
-    margin-top: 33px;
-}
-
-.wpcf7 input[type="text"],
-.wpcf7 input[type="email"] {
-    outline: none;
-    display: block;
-    border-bottom: black 1px solid;
-    width: 100%;
-}
-
-
-.wpcf7 input[type="submit"] {
-    background-color: rgb(16 185 129);
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-    font-family: 'Poppins';
-    width: 100%;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    margin-top: 35px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
 .feature-image-container:hover:last-child {
     display: none;
+}
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+#nav-menu-popup.active {
+    display: block;
+}
+
+.feature-container .overlay {
+    transition: opacity .5s ease;
 }

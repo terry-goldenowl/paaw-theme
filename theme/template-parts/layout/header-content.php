@@ -10,38 +10,44 @@
 ?>
 
 <header>
-          <div
-            class="w-full py-10 flex justify-between xl:px-[100px] lg:px-[80px] md:px-[60px] px-[40px]"
-          >
-            <div
-              class="text-slate-900 text-2xl font-bold font-['Poppins'] tracking-tight"
-            >
-              Paaw Studio
-            </div>
-            <div class="flex xl:gap-10 gap-5">
-              <a href="#"
-                class="text-black text-base font-normal font-['Poppins'] leading-7 hover:font-bold"
-              >
+    <div class="w-full py-10 flex justify-between xl:px-[100px] lg:px-[80px] md:px-[60px] px-[16px]">
+        <div class="text-slate-900 text-2xl font-bold font-['Quicksand'] tracking-tight">
+            Paaw Studio
+        </div>
+        <div class="xl:gap-10 gap-5 xl:flex hidden">
+            <a href="#"
+                class="link-to-contact-button text-black text-base font-normal font-['Quicksand'] leading-7 hover:font-bold">
                 Services
-              </a>
-              <a href="#"
-                class="text-black text-base font-normal font-['Poppins'] leading-7 hover:font-bold"
-              >
+            </a>
+            <a href="#"
+                class="link-to-contact-button text-black text-base font-normal font-['Quicksand'] leading-7 hover:font-bold">
                 Contact
-              </a>
-              <div>
-                <button
-                  class="text-black text-base font-normal font-['Poppins'] leading-7 hover:font-bold"
+            </a>
+            <!-- <div>
+                <a href="<?php site_url() ?>/vi"
+                  class="text-black text-base font-normal font-['Quicksand'] leading-7 hover:font-bold"
                 >
                   VI
-                </button>
+                </a>
                 |
-                <button
-                  class="text-black text-base font-normal font-['Poppins'] leading-7 hover:font-bold"
+                <a href="<?php site_url() ?>/"
+                  class="text-black text-base font-normal font-['Quicksand'] leading-7 hover:font-bold"
                 >
                   EN
-                </button>
+                </a>
               </div>
+               -->
+        </div>
+        <div class="relative xl:hidden block">
+            <button id="nav-menu-btn">
+                <i class="fa-solid fa-equals text-xl"></i>
+            </button>
+            <div class="absolute top-[20px] right-0 bg-white hidden shadow-md" id="nav-menu-popup">
+                <a href="#"
+                    class="link-to-contact-button block py-2 px-4 text-black text-base font-normal font-['Quicksand'] leading-7 xl:hover:font-bold">Services</a>
+                <a href="#"
+                    class="link-to-contact-button block py-2 px-4 text-black text-base font-normal font-['Quicksand'] leading-7 xl:hover:font-bold">Contact</a>
             </div>
-          </div>
-        </header>
+        </div>
+    </div>
+</header>
